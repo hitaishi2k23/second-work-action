@@ -28,3 +28,8 @@ jobs:
                 run: |
                     echo "hello from linux"
                     echo "hey google"
+    github-output-context:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: output github context
+                run:  echo{{tojson(github)}}
