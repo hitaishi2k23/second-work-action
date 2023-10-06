@@ -1,5 +1,5 @@
 name: simple action workflow
-on: [push]
+on: [workflow_dispatch]
 jobs:
     run-github-actions:
         runs-on: ubuntu-latest
