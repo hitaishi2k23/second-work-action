@@ -19,7 +19,7 @@ jobs:
                     pwd
                     ls -a
     run-gihub-second-action:
-        needs: run-github-actions
+    
         runs-on: ubuntu-latest
         steps:
             -   name: print greeting
@@ -32,4 +32,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   name: output github context
-                run:  echo"${{ toJSON(github) }}"
+                run:  echo ${{ toJSON(github) }}
