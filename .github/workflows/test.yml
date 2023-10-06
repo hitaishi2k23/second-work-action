@@ -20,6 +20,7 @@ jobs:
                     pwd
                     ls -a
     run-gihub-second-action:
+        needs: run-github-actions
         runs-on: ubuntu-latest
         steps:
             -   name: print greeting
