@@ -19,3 +19,12 @@ jobs:
                 run: |
                     pwd
                     ls -a
+    run-gihub-second-action:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: print greeting
+                run: echo "welcome devops"
+            -   name: multiple commands
+                run: |
+                    echo "hello from linux"
+                    echo "hey google"
