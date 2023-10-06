@@ -19,7 +19,7 @@ jobs:
                     pwd
                     ls -a
     run-gihub-second-action:
-    
+        needs: run-github-actions
         runs-on: ubuntu-latest
         steps:
             -   name: print greeting
@@ -29,6 +29,7 @@ jobs:
                     echo "hello from linux"
                     echo "hey google"
     github-output-context:
+        needs: run-gihub-second-action
         runs-on: ubuntu-latest
         steps:
             -   name: output github context
